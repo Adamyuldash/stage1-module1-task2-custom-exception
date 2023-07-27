@@ -12,7 +12,7 @@ public class StudentManager {
                 return Student.getValueOf(studentID);
             }
         }
-        throw new CustomException("Could not find student with ID {id}" + studentID );
+        throw new CustomException("Could not find student with ID " + studentID );
     }
 
     public static void main(String[] args) {
