@@ -8,12 +8,14 @@ public class StudentManager {
     public Student find(long studentID) throws CustomException {
 
         for (int i = 0; i < IDs.length; i++) {
+
             if (IDs[i] == studentID) {
                 return Student.getValueOf(studentID);
             }
         }
         throw new CustomException("Could not find student with ID " + studentID );
     }
+
 
     public static void main(String[] args) {
         StudentManager manager = new StudentManager();
